@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<div class="container text-center">
+		<h1 class="mt-5"> Random Password Generator </h1>
+
+		<form action="{% url 'password' %}">
+
+			<select name='length'>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12" selected="selected">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+
+			</select> Character Long
+		<br>
+				<input type="checkbox" name="uppercase" >  UpperCase <br>
+				<input type="checkbox" name="special" >  Special Characters <br>
+				<input type="checkbox" name="number" >  Numbers <br>
+				<input class="mt-3 btn btn-primary" type="submit" name="" value="Generate Password"> 
+
+		<hr>
+		
+			<a class="btn btn-danger" name="" href="{% url 'about' %}"> How to Use </a>
+		</form>
+
+</div>
