@@ -1,4 +1,6 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+{% extends 'generator/base.html' %}
+{% block content %}
+
 
 <div class="container text-center">
 	<h3 class="mt-5">There is nothing here. I think the Home Page is simple enough to unserstand. </h3>
@@ -6,3 +8,5 @@
 	<a class="btn btn-primary" href="{% url 'home'%}">Home Page</a>
 
 </div>
+
+{% endblock content %}
